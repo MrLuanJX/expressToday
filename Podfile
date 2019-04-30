@@ -3,7 +3,6 @@
 
 target 'LJXNewsArrive’ do
     pod 'AFNetworking'
-    pod 'SDWebImage'
     pod 'MJExtension'
     pod 'SVProgressHUD'
     pod 'MJRefresh'
@@ -15,6 +14,11 @@ target 'LJXNewsArrive’ do
     pod 'UMCPush'
     pod 'UMCCommon'
     pod 'JAnalytics'
+    pod 'JPush'
     pod 'YYCache'
     pod 'PrintBeautifulLog'
+    pod 'FLAnimatedImage'
+    pod 'SDWebImage/GIF'
+    pod 'SDWebImage'
+    pod 'GPUImage'
 end

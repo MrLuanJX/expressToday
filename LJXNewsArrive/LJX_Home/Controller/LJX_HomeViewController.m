@@ -9,6 +9,14 @@
 #import "LJX_HomeViewController.h"
 #import "LJX_HomePageViewController.h"
 
+UIEdgeInsets safeAreaInsets(void) {
+    UIEdgeInsets safeAreaInsets = UIEdgeInsetsZero;
+    if (@available(iOS 11.0, *)) {
+        safeAreaInsets = [[[[UIApplication sharedApplication] delegate]window]safeAreaInsets];
+    }
+    return safeAreaInsets;
+}
+
 @interface LJX_HomeViewController ()<WMPageControllerDataSource,WMPageControllerDelegate>
 
 @property (nonatomic , strong) NSMutableArray * models;
@@ -22,6 +30,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.title = @"今日快讯";
+    
     self.view.backgroundColor = [UIColor whiteColor];
 
     [self configUI];
@@ -45,7 +55,6 @@
     self.delegate = self;
     self.dataSource = self;
     self.automaticallyCalculatesItemWidths = YES;
-    
 }
 
 #pragma mark - WMPageController 的代理方法

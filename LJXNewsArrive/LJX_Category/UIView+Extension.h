@@ -8,6 +8,25 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger,UILayoutCornerRadiusType) {
+    UILayoutCornerRadiusTop    = 0,
+    UILayoutCornerRadiusLeft   = 1,
+    UILayoutCornerRadiusBottom = 2,
+    UILayoutCornerRadiusRight  = 3,
+    UILayoutCornerRadiusAll    = 4,
+    UILayoutCornerdeleteTopleft = 5,
+};
+
+typedef enum :NSInteger{
+    LJXShadowPathLeft,
+    LJXShadowPathRight,
+    LJXShadowPathTop,
+    LJXShadowPathBottom,
+    LJXShadowPathNoTop,
+    LJXShadowPathAllSide
+} LJXShadowPathSide;
+
+
 @interface UIView (Extension)
 
 @property (nonatomic, assign) CGFloat x;
@@ -45,6 +64,33 @@
 ///创建一个view的对象
 +(UIView*)CreateViewWithFrame:(CGRect)frame BackgroundColor:(UIColor*)color InteractionEnabled:(BOOL)enabled;
 
+// 渐变色
++ (void) getGradientWithFirstColor:(UIColor *)firstColor SecondColor:(UIColor *)secondColor WithView:(UIView *)view;
+// 边框
++ (void)setBorderWithView:(UIView *)view top:(BOOL)top left:(BOOL)left bottom:(BOOL)bottom right:(BOOL)right borderColor:(UIColor *)color borderWidth:(CGFloat)width;
+// 圆角
++ (void)UILayoutCornerRadiusType:(UILayoutCornerRadiusType)sideType withCornerRadius:(CGFloat)cornerRadius View:(UIView *)view;
+/*
+ * shadowColor 阴影颜色
+ *
+ * shadowOpacity 阴影透明度，默认0
+ *
+ * shadowRadius  阴影半径，默认3
+ *
+ * shadowPathSide 设置哪一侧的阴影，
+ 
+ * shadowPathWidth 阴影的宽度，
+ 
+ */
++ (void)LJX_AddShadowToView:(UIView *)theView SetShadowPathWith:(UIColor *)shadowColor shadowOpacity:(CGFloat)shadowOpacity shadowRadius:(CGFloat)shadowRadius shadowSide:(LJXShadowPathSide)shadowPathSide shadowPathWidth:(CGFloat)shadowPathWidth;
 
-- (void)sp_getMediaData;
+
+// 获取当前的时间
++ (NSString *) getCurrentTimes;
+
+/**
+ * dict(year,month,day,xz)
+ */
+
++ (NSDictionary *) currentXZWithCurrentDate : (NSString *)currentDate ;
 @end

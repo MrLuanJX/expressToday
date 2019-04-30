@@ -10,6 +10,9 @@
 #import "LJX_HomePageCell.h"
 #import "LJX_HomeBaseModel.h"
 #import "LJX_HomeModel.h"
+#import "LJX_HomeDetailViewController.h"
+#import "LJX_LeftHomePageCell.h"
+#import "LJX_RightHomePageCell.h"
 
 @interface LJX_HomePageViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -29,7 +32,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+        
     [self addTableView];
 
     self.requestIndex = self.currentIndex;
@@ -44,9 +47,10 @@
     
     NSString * url = [NSString stringWithFormat:@"%@?type=%@&key=%@",JHHomeList,self.types[self.currentIndex],JHAPPKEY];
     NSLog(@"url= %@",url); 
-    
+    [SVProgressHUD showWithStatus:@"正在加载....."];
+
     [LJXRequestTool LJX_requestWithType:LJX_GET URL:url params:nil successBlock:^(id obj) {
-        
+        [SVProgressHUD dismiss];
         NSLog(@"obj = %@",obj);
         if ([obj[@"error_code"] integerValue] == 0) {
             NSMutableArray * array = [LJX_HomeModel mj_objectArrayWithKeyValuesArray:obj[@"result"][@"data"]];
@@ -58,7 +62,7 @@
             [weakSelf.tableView reloadData];
         }
     } failureBlock:^(NSError *error) {
-        
+        [SVProgressHUD dismiss];
     }];
 }
 
@@ -75,19 +79,48 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    LJX_HomeModel * homeModel = [LJX_HomeModel new];
+    if (self.dataArray.count > 0) {
+        homeModel = self.dataArray[indexPath.row];
+    }
     
-    LJX_HomePageCell * bussinessManagementCell = [LJX_HomePageCell dequeueReusableCellWithTableView:tableView Identifier:@"bussinessManagementCell"];
-    
-    bussinessManagementCell.index = indexPath;
-    
-    bussinessManagementCell.homeListModel = self.dataArray[indexPath.row];
-    
-    return bussinessManagementCell;
+    if (NANULLString(homeModel.thumbnail_pic_s02) || NANULLString(homeModel.thumbnail_pic_s03)) {
+        // 随机数
+        int value = arc4random() % (2);;
+        if (value == 0) {
+            LJX_LeftHomePageCell * leftCell = [LJX_LeftHomePageCell dequeueReusableCellWithTableView:tableView Identifier:@"leftCell"];
+            if (self.dataArray.count > 0) {
+                leftCell.homeListModel = self.dataArray[indexPath.row];
+            }
+            return leftCell;
+        } else {
+            LJX_RightHomePageCell * rightCell = [LJX_RightHomePageCell dequeueReusableCellWithTableView:tableView Identifier:@"rightCell"];
+            if (self.dataArray.count > 0) {
+                rightCell.homeListModel = self.dataArray[indexPath.row];
+            }
+            return rightCell;
+        }
+    } else{
+        
+        LJX_HomePageCell * bussinessManagementCell = [LJX_HomePageCell dequeueReusableCellWithTableView:tableView Identifier:@"bussinessManagementCell"];
+        
+        bussinessManagementCell.index = indexPath;
+        
+        if (self.dataArray.count > 0) {
+            bussinessManagementCell.homeListModel = self.dataArray[indexPath.row];
+        }
+        return bussinessManagementCell;
+    }
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
+    if (self.dataArray.count > 0) {
+        LJX_HomeModel * homeModel = self.dataArray[indexPath.row];
+        LJX_HomeDetailViewController * detailVC = [LJX_HomeDetailViewController new];
+        detailVC.url = homeModel.url;
+        [self.navigationController pushViewController:detailVC animated:YES];
+    }
 }
 
 - (LJX_HomeBaseModel *)homeBaseModel {
@@ -120,6 +153,11 @@
         _types = [NSMutableArray arrayWithObjects:@"top",@"shehui",@"guonei",@"guoji",@"yule",@"tiyu",@"junshi",@"keji",@"caijing",@"shishang", nil];
     }
     return _types;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [SVProgressHUD dismiss];
 }
 
 @end

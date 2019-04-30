@@ -17,4 +17,6 @@
 
 @property (nonatomic , strong) LJX_MineListModel * mineModel;
 
+@property (nonatomic , copy) NSString * folderSize;
+
 @end

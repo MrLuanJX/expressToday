@@ -14,4 +14,7 @@
  */
 #define JHHomeList @"http://v.juhe.cn/toutiao/index"
 
+#define LJX_DZBaseURL @"https://api.apiopen.top/getJoke?" // type=gif&page=1&count=10
+
+
 #endif /* URLDefine_h */

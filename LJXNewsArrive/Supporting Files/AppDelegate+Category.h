@@ -16,4 +16,7 @@
 /*友盟统计*/
 -(void)configUMengAnalytics;
 
+- (void) developerOpenApiRegist;
+
+- (void) loginDeveloperOpenApi;
 @end

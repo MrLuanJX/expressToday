@@ -45,9 +45,18 @@
 
 -(void)setIndex:(NSIndexPath *)index{
     _index = index;
-    
-    self.arrows.hidden = index.row == 5 ? YES: NO;
-    self.decLabel.text = index.row == 5 ? APP_VERSION : @"";
+    if (index.row == 4) {
+        self.arrows.hidden = YES;
+        self.decLabel.text = APP_VERSION ;
+    }
+}
+
+- (void)setFolderSize:(NSString *)folderSize {
+    _folderSize = folderSize;
+        
+    if (self.index.row == 3) {
+        self.decLabel.text = [NSString stringWithFormat:@"%@M",self.folderSize];
+    }
 }
 
 -(void)setMineModel:(LJX_MineListModel *)mineModel{
@@ -129,7 +138,6 @@
 -(UILabel *)decLabel {
     if (_decLabel == nil) {
         _decLabel = [UILabel new];
-        _decLabel.text = @"未认证";
         _decLabel.textAlignment = NSTextAlignmentRight;
         _decLabel.font = [UIFont fontWithName:Font_Medium size:Kfont(16)];
         _decLabel.textColor = kSetUpCololor(195,195,195,1);

@@ -11,4 +11,5 @@
 
 @interface LJX_NavigationViewController : KLTNavigationController
 
+
 @end

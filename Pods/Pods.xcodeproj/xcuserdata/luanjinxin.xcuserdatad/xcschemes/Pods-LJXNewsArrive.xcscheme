@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C3F97F95D8CEF69055CCDA1C8CE45A0A"
+               BlueprintIdentifier = "E628E8A309EC26A41994E35EB12636AD"
                BuildableName = "libPods-LJXNewsArrive.a"
                BlueprintName = "Pods-LJXNewsArrive"
                ReferencedContainer = "container:Pods.xcodeproj">

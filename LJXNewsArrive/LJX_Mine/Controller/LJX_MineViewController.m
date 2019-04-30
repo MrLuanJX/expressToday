@@ -12,6 +12,8 @@
 #import "LJX_MineListModel.h"
 #import "LJX_MineFooterView.h"
 #import "LJX_AboutViewController.h"
+#import "LJX_FeedbackViewController.h"
+#import "LJX_SetupViewController.h"
 
 static CGFloat const imageBGHeight = 200; // 背景图片的高度
 static NSString * const identifier = @"cell"; // cell重用标识符
@@ -23,6 +25,7 @@ static NSString * const identifier = @"cell"; // cell重用标识符
 @property (nonatomic , strong) UIImageView *imageBG;
 @property (nonatomic , strong) UILabel *titleLabel;
 @property (nonatomic , strong) LJX_MineFooterView * footView;
+@property (nonatomic , assign) CGFloat fileSize;
 
 @end
 
@@ -35,10 +38,13 @@ static NSString * const identifier = @"cell"; // cell重用标识符
     [self setupNav];
     
     [self setupTableView];
+    
+    NSString *libPath = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES)[0];
+    self.fileSize = [self folderSizeAtPath:libPath];
+    
 }
 
 - (void)setupNav {
-    self.automaticallyAdjustsScrollViewInsets=NO; // 不自动切64
     
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     
@@ -70,12 +76,26 @@ static NSString * const identifier = @"cell"; // cell重用标识符
     
     mineCell.mineModel = self.model.list[indexPath.row];
     
+    mineCell.folderSize = [NSString stringWithFormat:@"%.2lf",self.fileSize];
+    
     return mineCell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
+        [self.navigationController pushViewController:[LJX_SetupViewController new] animated:YES];
+    }
+    
+    if (indexPath.row == 1) {
+        [self.navigationController pushViewController:[LJX_FeedbackViewController new] animated:YES];
+    }
+    
+    if (indexPath.row == 2) {
         [self.navigationController pushViewController:[LJX_AboutViewController new] animated:YES];
+    }
+    
+    if (indexPath.row == 3) {
+        [self clearFile];
     }
 }
 
@@ -157,8 +177,8 @@ static NSString * const identifier = @"cell"; // cell重用标识符
         _model = [LJX_MineModel new];
         
         NSMutableArray *arr = [[NSMutableArray alloc]init];
-        NSArray *title = @[@"我的证照",@"我的办理",@"我的预约",@"我的订单",@"修改密码",@"当前版本号"];
-        NSArray *icon = @[@"icon_idphoto",@"icon_handle",@"icon_appointment",@"icon_order",@"icon_feedback",@"icon_about"];
+        NSArray *title = @[@"设置",@"意见反馈",@"关于我们",@"清理缓存",@"当前版本"];
+        NSArray *icon = @[@"icon_idphoto",@"icon_feedback",@"icon_about",@"icon_handle",@"icon_appointment"];
         for (int i = 0; i < title.count; i++) {
             LJX_MineListModel *listModel = [[LJX_MineListModel alloc]init];
             listModel.name = title[i];
@@ -170,11 +190,54 @@ static NSString * const identifier = @"cell"; // cell重用标识符
     return _model;
 }
 
-//-(LJX_MineFooterView *)footView{
-//    if (!_footView) {
-//        _footView = [LJX_MineFooterView new];
-//    }
-//    return _footView;
-//}
+- (float ) folderSizeAtPath:(NSString*) folderPath{
+    NSFileManager* manager = [NSFileManager defaultManager];
+    if (![manager fileExistsAtPath:folderPath]) return 0;
+    NSEnumerator *childFilesEnumerator = [[manager subpathsAtPath:folderPath] objectEnumerator];
+    NSString* fileName;
+    long long folderSize = 0;
+    while ((fileName = [childFilesEnumerator nextObject]) != nil){
+        NSString* fileAbsolutePath = [folderPath stringByAppendingPathComponent:fileName];
+        folderSize += [self fileSizeAtPath:fileAbsolutePath];
+    }
+    return folderSize/(1024.0*1024.0);
+}
 
+- (long long)fileSizeAtPath:(NSString*) filePath{
+    NSFileManager* manager = [NSFileManager defaultManager];
+    if ([manager fileExistsAtPath:filePath]){
+        return [[manager attributesOfItemAtPath:filePath error:nil] fileSize];
+    }
+    return 0;
+}
+
+#pragma mark - 清理缓存
+
+- (void) clearFile {
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSString *cachPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+        NSLog(@"%@", cachPath);
+        NSArray *files = [[NSFileManager defaultManager] subpathsAtPath:cachPath];
+        NSLog(@"files : %lu",(unsigned long)[files count]);
+        
+        for (NSString * p in files) {
+            NSError *error;
+            
+            NSString *path = [cachPath stringByAppendingPathComponent:p];
+            if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
+                [[NSFileManager defaultManager] removeItemAtPath:path error:&error];
+            }
+        }
+        
+        [self performSelectorOnMainThread:@selector(clearCacheSuccess) withObject:nil waitUntilDone:YES];
+    });
+}
+
+-(void)clearCacheSuccess{
+    NSLog(@"清理成功");
+    [SVProgressHUD showSuccessWithStatus:@"清理成功"];
+    self.fileSize = 0;
+    [self.tableView reloadData];
+}
 @end

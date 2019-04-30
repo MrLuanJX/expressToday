@@ -10,4 +10,6 @@
 
 @interface LJX_HomeViewController : WMPageController
 
+UIEdgeInsets safeAreaInsets(void);
+
 @end

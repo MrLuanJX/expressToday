@@ -14,6 +14,8 @@
 #import <Masonry.h>
 #import <MJExtension.h>
 #import <MJRefresh.h>
+#import <SDWebImageManager.h>
+#import <SDWebImageDownloader.h>
 #import <UIImageView+WebCache.h>
 #import <SDImageCache.h>
 #import <SDWebImage/UIButton+WebCache.h>
@@ -22,6 +24,9 @@
 #import <UMCommon/UMCommon.h>
 #import <AdSupport/AdSupport.h>
 #import "WMPageController.h"
+#import "HZPhotoBrowser.h"
+#import <SDWebImage/UIImage+GIF.h>
+#import <SDWebImage/FLAnimatedImageView+WebCache.h>
 
 /** Category **/
 #import "UIImage+Extension.h"
@@ -34,5 +39,7 @@
 #import "LJX_TabBarController.h"
 #import "LJX_BaseViewController.h"
 #import "LJXRequestTool.h"
+#import "LJX_LoginViewController.h"
+#import "LJX_HomeViewController.h"
 
 #endif /* ImportFile_h */

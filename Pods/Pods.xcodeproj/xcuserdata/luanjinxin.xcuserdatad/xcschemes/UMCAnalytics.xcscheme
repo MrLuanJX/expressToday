@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C52BAF74194E01F1D9A8932565032197"
+               BlueprintIdentifier = "96E9FEB47F9D9034D17CA0F30000C2EB"
                BuildableName = "UMCAnalytics"
                BlueprintName = "UMCAnalytics"
                ReferencedContainer = "container:Pods.xcodeproj">

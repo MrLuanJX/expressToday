@@ -7,6 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00470D8F226448AA002B040F /* LJX_HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470D8E226448AA002B040F /* LJX_HomeDetailViewController.m */; };
+		00470D9322645597002B040F /* icon-20-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 00470D9222645597002B040F /* icon-20-ipad.png */; };
+		00470D9822645C70002B040F /* LJX_FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470D9722645C70002B040F /* LJX_FeedbackViewController.m */; };
+		00470DEC2266F6E8002B040F /* LJX_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470DEB2266F6E8002B040F /* LJX_LoginViewController.m */; };
+		00470DEF22671F79002B040F /* LJX_RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470DEE22671F79002B040F /* LJX_RegistViewController.m */; };
+		00470DF3226744B2002B040F /* LJX_DZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470DF2226744B2002B040F /* LJX_DZViewController.m */; };
+		00470DF6226745B8002B040F /* LJX_DZPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470DF5226745B8002B040F /* LJX_DZPageViewController.m */; };
+		00470DF922696BBB002B040F /* LJX_DZListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470DF822696BBB002B040F /* LJX_DZListCell.m */; };
+		00470E042269A22B002B040F /* LJX_DZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470E032269A22B002B040F /* LJX_DZModel.m */; };
+		00470E0A226D7194002B040F /* LJX_SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470E09226D7194002B040F /* LJX_SetupViewController.m */; };
+		00470EDB22719139002B040F /* LJX_HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470EDA22719139002B040F /* LJX_HistoryViewController.m */; };
+		00470EEC22719FCE002B040F /* WHUCalendarYMSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470EDD22719FCE002B040F /* WHUCalendarYMSelectView.m */; };
+		00470EED22719FCE002B040F /* WHUCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470EDE22719FCE002B040F /* WHUCalendarView.m */; };
+		00470EEE22719FCE002B040F /* WHUCalendarCal.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470EE022719FCE002B040F /* WHUCalendarCal.m */; };
+		00470EEF22719FCE002B040F /* WHUCalendarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470EE122719FCE002B040F /* WHUCalendarItem.m */; };
+		00470EF022719FCE002B040F /* WHUCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470EE222719FCE002B040F /* WHUCalendarCell.m */; };
+		00470EF122719FCE002B040F /* WHUCalendarFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470EE422719FCE002B040F /* WHUCalendarFlowLayout.m */; };
+		00470EF222719FCE002B040F /* WHUCalendarPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470EE722719FCE002B040F /* WHUCalendarPopView.m */; };
+		00470EF72271BFD9002B040F /* LJX_HLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470EF62271BFD9002B040F /* LJX_HLCell.m */; };
+		00470EFA2272A035002B040F /* LJX_HLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470EF92272A035002B040F /* LJX_HLModel.m */; };
+		00470EFF2272DA42002B040F /* LJX_SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470EFE2272DA42002B040F /* LJX_SectionHeaderView.m */; };
+		00470F022272E317002B040F /* UILabel+LJXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470F012272E317002B040F /* UILabel+LJXLabel.m */; };
+		00470F052272F215002B040F /* LJX_XZCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470F042272F215002B040F /* LJX_XZCell.m */; };
+		00470F26227544A0002B040F /* HYHCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470F25227544A0002B040F /* HYHCircleView.m */; };
+		00470F2922755872002B040F /* LJX_HisCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470F2822755872002B040F /* LJX_HisCell.m */; };
+		00470F2C22755C96002B040F /* LJX_HisModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470F2B22755C96002B040F /* LJX_HisModel.m */; };
+		00470F2F22755CA9002B040F /* LJX_XZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470F2E22755CA9002B040F /* LJX_XZModel.m */; };
+		00470F322275A94D002B040F /* LJX_HistoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470F312275A94D002B040F /* LJX_HistoryListViewController.m */; };
+		00470F3522768EC9002B040F /* LJX_HLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470F3422768EC9002B040F /* LJX_HLViewController.m */; };
+		00470F382276A46D002B040F /* LJX_LeftHomePageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470F372276A46D002B040F /* LJX_LeftHomePageCell.m */; };
+		00470F3B2276AFDC002B040F /* LJX_RightHomePageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470F3A2276AFDC002B040F /* LJX_RightHomePageCell.m */; };
+		00470F412276C9A0002B040F /* LLWCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470F3E2276C9A0002B040F /* LLWCustomButton.m */; };
+		00470F422276C9A0002B040F /* LLWPlusPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470F3F2276C9A0002B040F /* LLWPlusPopView.m */; };
+		00470F462276C9F9002B040F /* LJX_PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470F452276C9F9002B040F /* LJX_PostViewController.m */; };
+		00470F8322784A47002B040F /* LJXAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00470F8222784A47002B040F /* LJXAlertViewController.m */; };
 		8308C07D846D82A4048B2A12 /* libPods-LJXNewsArrive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 581B0C54A94240513A40C372 /* libPods-LJXNewsArrive.a */; };
 		DD26994F22617D0B00944BE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD26994E22617D0B00944BE5 /* AppDelegate.m */; };
 		DD26995222617D0C00944BE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD26995122617D0C00944BE5 /* ViewController.m */; };
@@ -35,9 +70,12 @@
 		DD2699C42261B21600944BE5 /* LJX_MineListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2699C32261B21600944BE5 /* LJX_MineListModel.m */; };
 		DD2699C72261BAC000944BE5 /* LJX_MineFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2699C62261BAC000944BE5 /* LJX_MineFooterView.m */; };
 		DD2699D72261DAA300944BE5 /* LJXRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2699D52261DAA300944BE5 /* LJXRequestTool.m */; };
-		DD2699DB2261DCAC00944BE5 /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD2699D92261DCAC00944BE5 /* LaunchScreen.strings */; };
 		DD2699DE2261E47300944BE5 /* LJX_HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2699DD2261E47300944BE5 /* LJX_HomeModel.m */; };
 		DD2699E12261E78800944BE5 /* LJX_HomeBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2699E02261E78800944BE5 /* LJX_HomeBaseModel.m */; };
+		DD5ADF4F22688D33008B5CBB /* HZWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5ADF4722688D32008B5CBB /* HZWaitingView.m */; };
+		DD5ADF5022688D33008B5CBB /* HZPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5ADF4922688D32008B5CBB /* HZPhotoBrowser.m */; };
+		DD5ADF5122688D33008B5CBB /* HZPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DD5ADF4C22688D32008B5CBB /* HZPhotoBrowser.bundle */; };
+		DD5ADF5222688D33008B5CBB /* HZPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5ADF4D22688D32008B5CBB /* HZPhotoBrowserView.m */; };
 		DD7D819C226219A100D35D8F /* WaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7D819A226219A100D35D8F /* WaterView.m */; };
 		DD7D819F226219CB00D35D8F /* LJX_AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7D819E226219CB00D35D8F /* LJX_AboutViewController.m */; };
 		DD7D81A422621B8E00D35D8F /* fb_wave.png in Resources */ = {isa = PBXBuildFile; fileRef = DD7D81A022621B8E00D35D8F /* fb_wave.png */; };
@@ -63,6 +101,76 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00470D8D226448AA002B040F /* LJX_HomeDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_HomeDetailViewController.h; sourceTree = "<group>"; };
+		00470D8E226448AA002B040F /* LJX_HomeDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_HomeDetailViewController.m; sourceTree = "<group>"; };
+		00470D9222645597002B040F /* icon-20-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-20-ipad.png"; sourceTree = "<group>"; };
+		00470D9622645C70002B040F /* LJX_FeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_FeedbackViewController.h; sourceTree = "<group>"; };
+		00470D9722645C70002B040F /* LJX_FeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_FeedbackViewController.m; sourceTree = "<group>"; };
+		00470DEA2266F6E8002B040F /* LJX_LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_LoginViewController.h; sourceTree = "<group>"; };
+		00470DEB2266F6E8002B040F /* LJX_LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_LoginViewController.m; sourceTree = "<group>"; };
+		00470DED22671F79002B040F /* LJX_RegistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_RegistViewController.h; sourceTree = "<group>"; };
+		00470DEE22671F79002B040F /* LJX_RegistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_RegistViewController.m; sourceTree = "<group>"; };
+		00470DF1226744B2002B040F /* LJX_DZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_DZViewController.h; sourceTree = "<group>"; };
+		00470DF2226744B2002B040F /* LJX_DZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_DZViewController.m; sourceTree = "<group>"; };
+		00470DF4226745B8002B040F /* LJX_DZPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_DZPageViewController.h; sourceTree = "<group>"; };
+		00470DF5226745B8002B040F /* LJX_DZPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_DZPageViewController.m; sourceTree = "<group>"; };
+		00470DF722696BBB002B040F /* LJX_DZListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_DZListCell.h; sourceTree = "<group>"; };
+		00470DF822696BBB002B040F /* LJX_DZListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_DZListCell.m; sourceTree = "<group>"; };
+		00470E022269A22B002B040F /* LJX_DZModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_DZModel.h; sourceTree = "<group>"; };
+		00470E032269A22B002B040F /* LJX_DZModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_DZModel.m; sourceTree = "<group>"; };
+		00470E08226D7194002B040F /* LJX_SetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_SetupViewController.h; sourceTree = "<group>"; };
+		00470E09226D7194002B040F /* LJX_SetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_SetupViewController.m; sourceTree = "<group>"; };
+		00470ED922719139002B040F /* LJX_HistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_HistoryViewController.h; sourceTree = "<group>"; };
+		00470EDA22719139002B040F /* LJX_HistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_HistoryViewController.m; sourceTree = "<group>"; };
+		00470EDD22719FCE002B040F /* WHUCalendarYMSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHUCalendarYMSelectView.m; sourceTree = "<group>"; };
+		00470EDE22719FCE002B040F /* WHUCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHUCalendarView.m; sourceTree = "<group>"; };
+		00470EDF22719FCE002B040F /* WHUCalendarFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHUCalendarFlowLayout.h; sourceTree = "<group>"; };
+		00470EE022719FCE002B040F /* WHUCalendarCal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHUCalendarCal.m; sourceTree = "<group>"; };
+		00470EE122719FCE002B040F /* WHUCalendarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHUCalendarItem.m; sourceTree = "<group>"; };
+		00470EE222719FCE002B040F /* WHUCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHUCalendarCell.m; sourceTree = "<group>"; };
+		00470EE322719FCE002B040F /* WHUCalendarPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHUCalendarPopView.h; sourceTree = "<group>"; };
+		00470EE422719FCE002B040F /* WHUCalendarFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHUCalendarFlowLayout.m; sourceTree = "<group>"; };
+		00470EE522719FCE002B040F /* WHUCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHUCalendarView.h; sourceTree = "<group>"; };
+		00470EE622719FCE002B040F /* WHUCalendarYMSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHUCalendarYMSelectView.h; sourceTree = "<group>"; };
+		00470EE722719FCE002B040F /* WHUCalendarPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHUCalendarPopView.m; sourceTree = "<group>"; };
+		00470EE822719FCE002B040F /* WHUCalendarMarcro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHUCalendarMarcro.h; sourceTree = "<group>"; };
+		00470EE922719FCE002B040F /* WHUCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHUCalendarCell.h; sourceTree = "<group>"; };
+		00470EEA22719FCE002B040F /* WHUCalendarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHUCalendarItem.h; sourceTree = "<group>"; };
+		00470EEB22719FCE002B040F /* WHUCalendarCal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHUCalendarCal.h; sourceTree = "<group>"; };
+		00470EF52271BFD9002B040F /* LJX_HLCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_HLCell.h; sourceTree = "<group>"; };
+		00470EF62271BFD9002B040F /* LJX_HLCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_HLCell.m; sourceTree = "<group>"; };
+		00470EF82272A035002B040F /* LJX_HLModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_HLModel.h; sourceTree = "<group>"; };
+		00470EF92272A035002B040F /* LJX_HLModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_HLModel.m; sourceTree = "<group>"; };
+		00470EFD2272DA42002B040F /* LJX_SectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_SectionHeaderView.h; sourceTree = "<group>"; };
+		00470EFE2272DA42002B040F /* LJX_SectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_SectionHeaderView.m; sourceTree = "<group>"; };
+		00470F002272E317002B040F /* UILabel+LJXLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+LJXLabel.h"; sourceTree = "<group>"; };
+		00470F012272E317002B040F /* UILabel+LJXLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LJXLabel.m"; sourceTree = "<group>"; };
+		00470F032272F215002B040F /* LJX_XZCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_XZCell.h; sourceTree = "<group>"; };
+		00470F042272F215002B040F /* LJX_XZCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_XZCell.m; sourceTree = "<group>"; };
+		00470F24227544A0002B040F /* HYHCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYHCircleView.h; sourceTree = "<group>"; };
+		00470F25227544A0002B040F /* HYHCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYHCircleView.m; sourceTree = "<group>"; };
+		00470F2722755872002B040F /* LJX_HisCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_HisCell.h; sourceTree = "<group>"; };
+		00470F2822755872002B040F /* LJX_HisCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_HisCell.m; sourceTree = "<group>"; };
+		00470F2A22755C96002B040F /* LJX_HisModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_HisModel.h; sourceTree = "<group>"; };
+		00470F2B22755C96002B040F /* LJX_HisModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_HisModel.m; sourceTree = "<group>"; };
+		00470F2D22755CA9002B040F /* LJX_XZModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_XZModel.h; sourceTree = "<group>"; };
+		00470F2E22755CA9002B040F /* LJX_XZModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_XZModel.m; sourceTree = "<group>"; };
+		00470F302275A94D002B040F /* LJX_HistoryListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_HistoryListViewController.h; sourceTree = "<group>"; };
+		00470F312275A94D002B040F /* LJX_HistoryListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_HistoryListViewController.m; sourceTree = "<group>"; };
+		00470F3322768EC9002B040F /* LJX_HLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_HLViewController.h; sourceTree = "<group>"; };
+		00470F3422768EC9002B040F /* LJX_HLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_HLViewController.m; sourceTree = "<group>"; };
+		00470F362276A46D002B040F /* LJX_LeftHomePageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_LeftHomePageCell.h; sourceTree = "<group>"; };
+		00470F372276A46D002B040F /* LJX_LeftHomePageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_LeftHomePageCell.m; sourceTree = "<group>"; };
+		00470F392276AFDC002B040F /* LJX_RightHomePageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_RightHomePageCell.h; sourceTree = "<group>"; };
+		00470F3A2276AFDC002B040F /* LJX_RightHomePageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_RightHomePageCell.m; sourceTree = "<group>"; };
+		00470F3D2276C9A0002B040F /* LLWPlusPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLWPlusPopView.h; sourceTree = "<group>"; };
+		00470F3E2276C9A0002B040F /* LLWCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLWCustomButton.m; sourceTree = "<group>"; };
+		00470F3F2276C9A0002B040F /* LLWPlusPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLWPlusPopView.m; sourceTree = "<group>"; };
+		00470F402276C9A0002B040F /* LLWCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLWCustomButton.h; sourceTree = "<group>"; };
+		00470F442276C9F9002B040F /* LJX_PostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_PostViewController.h; sourceTree = "<group>"; };
+		00470F452276C9F9002B040F /* LJX_PostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_PostViewController.m; sourceTree = "<group>"; };
+		00470F8122784A47002B040F /* LJXAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJXAlertViewController.h; sourceTree = "<group>"; };
+		00470F8222784A47002B040F /* LJXAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJXAlertViewController.m; sourceTree = "<group>"; };
 		101DE8E9CD18BB4DA9B6C5DC /* Pods-LJXNewsArrive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJXNewsArrive.debug.xcconfig"; path = "Target Support Files/Pods-LJXNewsArrive/Pods-LJXNewsArrive.debug.xcconfig"; sourceTree = "<group>"; };
 		581B0C54A94240513A40C372 /* libPods-LJXNewsArrive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LJXNewsArrive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73073733F0D2F48D836757DE /* Pods-LJXNewsArrive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJXNewsArrive.release.xcconfig"; path = "Target Support Files/Pods-LJXNewsArrive/Pods-LJXNewsArrive.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,11 +232,18 @@
 		DD2699C62261BAC000944BE5 /* LJX_MineFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_MineFooterView.m; sourceTree = "<group>"; };
 		DD2699D52261DAA300944BE5 /* LJXRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXRequestTool.m; sourceTree = "<group>"; };
 		DD2699D62261DAA300944BE5 /* LJXRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXRequestTool.h; sourceTree = "<group>"; };
-		DD2699DA2261DCAC00944BE5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = LaunchScreen.strings; sourceTree = "<group>"; };
 		DD2699DC2261E47300944BE5 /* LJX_HomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_HomeModel.h; sourceTree = "<group>"; };
 		DD2699DD2261E47300944BE5 /* LJX_HomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_HomeModel.m; sourceTree = "<group>"; };
 		DD2699DF2261E78800944BE5 /* LJX_HomeBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_HomeBaseModel.h; sourceTree = "<group>"; };
 		DD2699E02261E78800944BE5 /* LJX_HomeBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJX_HomeBaseModel.m; sourceTree = "<group>"; };
+		DD5ADF4722688D32008B5CBB /* HZWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZWaitingView.m; sourceTree = "<group>"; };
+		DD5ADF4822688D32008B5CBB /* HZPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		DD5ADF4922688D32008B5CBB /* HZPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowser.m; sourceTree = "<group>"; };
+		DD5ADF4A22688D32008B5CBB /* HZPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowserView.h; sourceTree = "<group>"; };
+		DD5ADF4B22688D32008B5CBB /* HZWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZWaitingView.h; sourceTree = "<group>"; };
+		DD5ADF4C22688D32008B5CBB /* HZPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HZPhotoBrowser.bundle; sourceTree = "<group>"; };
+		DD5ADF4D22688D32008B5CBB /* HZPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowserView.m; sourceTree = "<group>"; };
+		DD5ADF4E22688D32008B5CBB /* HZPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowser.h; sourceTree = "<group>"; };
 		DD7D819A226219A100D35D8F /* WaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterView.m; sourceTree = "<group>"; };
 		DD7D819B226219A100D35D8F /* WaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterView.h; sourceTree = "<group>"; };
 		DD7D819D226219CB00D35D8F /* LJX_AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJX_AboutViewController.h; sourceTree = "<group>"; };
@@ -165,6 +280,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00470DF0226744A4002B040F /* LJX_DZ */ = {
+			isa = PBXGroup;
+			children = (
+				00470DF1226744B2002B040F /* LJX_DZViewController.h */,
+				00470DF2226744B2002B040F /* LJX_DZViewController.m */,
+				00470DF4226745B8002B040F /* LJX_DZPageViewController.h */,
+				00470DF5226745B8002B040F /* LJX_DZPageViewController.m */,
+				00470DF722696BBB002B040F /* LJX_DZListCell.h */,
+				00470DF822696BBB002B040F /* LJX_DZListCell.m */,
+				00470E022269A22B002B040F /* LJX_DZModel.h */,
+				00470E032269A22B002B040F /* LJX_DZModel.m */,
+			);
+			path = LJX_DZ;
+			sourceTree = "<group>";
+		};
+		00470ED822719125002B040F /* LJX_History */ = {
+			isa = PBXGroup;
+			children = (
+				00470EFC2272DA23002B040F /* LJX_HLView */,
+				00470EFB2272A067002B040F /* LJX_HLModel */,
+				00470EDC22719FCE002B040F /* Classes */,
+				00470ED922719139002B040F /* LJX_HistoryViewController.h */,
+				00470EDA22719139002B040F /* LJX_HistoryViewController.m */,
+				00470F302275A94D002B040F /* LJX_HistoryListViewController.h */,
+				00470F312275A94D002B040F /* LJX_HistoryListViewController.m */,
+				00470F3322768EC9002B040F /* LJX_HLViewController.h */,
+				00470F3422768EC9002B040F /* LJX_HLViewController.m */,
+			);
+			path = LJX_History;
+			sourceTree = "<group>";
+		};
+		00470EDC22719FCE002B040F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				00470EDD22719FCE002B040F /* WHUCalendarYMSelectView.m */,
+				00470EDE22719FCE002B040F /* WHUCalendarView.m */,
+				00470EDF22719FCE002B040F /* WHUCalendarFlowLayout.h */,
+				00470EE022719FCE002B040F /* WHUCalendarCal.m */,
+				00470EE122719FCE002B040F /* WHUCalendarItem.m */,
+				00470EE222719FCE002B040F /* WHUCalendarCell.m */,
+				00470EE322719FCE002B040F /* WHUCalendarPopView.h */,
+				00470EE422719FCE002B040F /* WHUCalendarFlowLayout.m */,
+				00470EE522719FCE002B040F /* WHUCalendarView.h */,
+				00470EE622719FCE002B040F /* WHUCalendarYMSelectView.h */,
+				00470EE722719FCE002B040F /* WHUCalendarPopView.m */,
+				00470EE822719FCE002B040F /* WHUCalendarMarcro.h */,
+				00470EE922719FCE002B040F /* WHUCalendarCell.h */,
+				00470EEA22719FCE002B040F /* WHUCalendarItem.h */,
+				00470EEB22719FCE002B040F /* WHUCalendarCal.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		00470EFB2272A067002B040F /* LJX_HLModel */ = {
+			isa = PBXGroup;
+			children = (
+				00470EF82272A035002B040F /* LJX_HLModel.h */,
+				00470EF92272A035002B040F /* LJX_HLModel.m */,
+				00470F2A22755C96002B040F /* LJX_HisModel.h */,
+				00470F2B22755C96002B040F /* LJX_HisModel.m */,
+				00470F2D22755CA9002B040F /* LJX_XZModel.h */,
+				00470F2E22755CA9002B040F /* LJX_XZModel.m */,
+			);
+			path = LJX_HLModel;
+			sourceTree = "<group>";
+		};
+		00470EFC2272DA23002B040F /* LJX_HLView */ = {
+			isa = PBXGroup;
+			children = (
+				00470F24227544A0002B040F /* HYHCircleView.h */,
+				00470F25227544A0002B040F /* HYHCircleView.m */,
+				00470EF52271BFD9002B040F /* LJX_HLCell.h */,
+				00470EF62271BFD9002B040F /* LJX_HLCell.m */,
+				00470EFD2272DA42002B040F /* LJX_SectionHeaderView.h */,
+				00470EFE2272DA42002B040F /* LJX_SectionHeaderView.m */,
+				00470F032272F215002B040F /* LJX_XZCell.h */,
+				00470F042272F215002B040F /* LJX_XZCell.m */,
+				00470F2722755872002B040F /* LJX_HisCell.h */,
+				00470F2822755872002B040F /* LJX_HisCell.m */,
+			);
+			path = LJX_HLView;
+			sourceTree = "<group>";
+		};
+		00470F3C2276C9A0002B040F /* LLWPlusPopView */ = {
+			isa = PBXGroup;
+			children = (
+				00470F3D2276C9A0002B040F /* LLWPlusPopView.h */,
+				00470F3E2276C9A0002B040F /* LLWCustomButton.m */,
+				00470F3F2276C9A0002B040F /* LLWPlusPopView.m */,
+				00470F402276C9A0002B040F /* LLWCustomButton.h */,
+			);
+			path = LLWPlusPopView;
+			sourceTree = "<group>";
+		};
+		00470F432276C9E7002B040F /* LJX_Post */ = {
+			isa = PBXGroup;
+			children = (
+				00470F442276C9F9002B040F /* LJX_PostViewController.h */,
+				00470F452276C9F9002B040F /* LJX_PostViewController.m */,
+			);
+			path = LJX_Post;
+			sourceTree = "<group>";
+		};
 		7F152A582B9EE22386DD220C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +427,9 @@
 			children = (
 				DD2699A6226189DE00944BE5 /* LJX_Login */,
 				DD2699A5226189D300944BE5 /* LJX_Home */,
+				00470DF0226744A4002B040F /* LJX_DZ */,
+				00470F432276C9E7002B040F /* LJX_Post */,
+				00470ED822719125002B040F /* LJX_History */,
 				DD2699A4226189C500944BE5 /* LJX_Mine */,
 				DD2699872261838500944BE5 /* LJX_BaseViewController */,
 				DD2699C82261D34900944BE5 /* LJX_Tool */,
@@ -239,6 +460,7 @@
 		DD26997F22617D2300944BE5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				00470D9222645597002B040F /* icon-20-ipad.png */,
 				DD26994D22617D0B00944BE5 /* AppDelegate.h */,
 				DD26994E22617D0B00944BE5 /* AppDelegate.m */,
 				DD26998422617F4500944BE5 /* AppDelegate+Category.h */,
@@ -286,6 +508,8 @@
 				DD269995226185ED00944BE5 /* UIImage+Extension.m */,
 				DD269992226185C600944BE5 /* UIBarButtonItem+Extension.h */,
 				DD269993226185C600944BE5 /* UIBarButtonItem+Extension.m */,
+				00470F002272E317002B040F /* UILabel+LJXLabel.h */,
+				00470F012272E317002B040F /* UILabel+LJXLabel.m */,
 			);
 			path = LJX_Category;
 			sourceTree = "<group>";
@@ -313,6 +537,10 @@
 		DD2699A6226189DE00944BE5 /* LJX_Login */ = {
 			isa = PBXGroup;
 			children = (
+				00470DEA2266F6E8002B040F /* LJX_LoginViewController.h */,
+				00470DEB2266F6E8002B040F /* LJX_LoginViewController.m */,
+				00470DED22671F79002B040F /* LJX_RegistViewController.h */,
+				00470DEE22671F79002B040F /* LJX_RegistViewController.m */,
 			);
 			path = LJX_Login;
 			sourceTree = "<group>";
@@ -324,6 +552,8 @@
 				DD2699A822618A1B00944BE5 /* LJX_HomeViewController.m */,
 				DD2699B0226194D700944BE5 /* LJX_HomePageViewController.h */,
 				DD2699B1226194D700944BE5 /* LJX_HomePageViewController.m */,
+				00470D8D226448AA002B040F /* LJX_HomeDetailViewController.h */,
+				00470D8E226448AA002B040F /* LJX_HomeDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -333,6 +563,10 @@
 			children = (
 				DD2699B32261975C00944BE5 /* LJX_HomePageCell.h */,
 				DD2699B42261975C00944BE5 /* LJX_HomePageCell.m */,
+				00470F362276A46D002B040F /* LJX_LeftHomePageCell.h */,
+				00470F372276A46D002B040F /* LJX_LeftHomePageCell.m */,
+				00470F392276AFDC002B040F /* LJX_RightHomePageCell.h */,
+				00470F3A2276AFDC002B040F /* LJX_RightHomePageCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -353,8 +587,12 @@
 			children = (
 				DD2699AA22618A3600944BE5 /* LJX_MineViewController.h */,
 				DD2699AB22618A3600944BE5 /* LJX_MineViewController.m */,
+				00470E08226D7194002B040F /* LJX_SetupViewController.h */,
+				00470E09226D7194002B040F /* LJX_SetupViewController.m */,
 				DD7D819D226219CB00D35D8F /* LJX_AboutViewController.h */,
 				DD7D819E226219CB00D35D8F /* LJX_AboutViewController.m */,
+				00470D9622645C70002B040F /* LJX_FeedbackViewController.h */,
+				00470D9722645C70002B040F /* LJX_FeedbackViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -390,19 +628,29 @@
 		DD2699C82261D34900944BE5 /* LJX_Tool */ = {
 			isa = PBXGroup;
 			children = (
-				DD2699D82261DCAC00944BE5 /* zh-Hans.lproj */,
+				00470F3C2276C9A0002B040F /* LLWPlusPopView */,
+				DD5ADF4622688D32008B5CBB /* ptotoBrowser */,
 				DD2699D62261DAA300944BE5 /* LJXRequestTool.h */,
 				DD2699D52261DAA300944BE5 /* LJXRequestTool.m */,
+				00470F8122784A47002B040F /* LJXAlertViewController.h */,
+				00470F8222784A47002B040F /* LJXAlertViewController.m */,
 			);
 			path = LJX_Tool;
 			sourceTree = "<group>";
 		};
-		DD2699D82261DCAC00944BE5 /* zh-Hans.lproj */ = {
+		DD5ADF4622688D32008B5CBB /* ptotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				DD2699D92261DCAC00944BE5 /* LaunchScreen.strings */,
+				DD5ADF4722688D32008B5CBB /* HZWaitingView.m */,
+				DD5ADF4822688D32008B5CBB /* HZPhotoBrowserConfig.h */,
+				DD5ADF4922688D32008B5CBB /* HZPhotoBrowser.m */,
+				DD5ADF4A22688D32008B5CBB /* HZPhotoBrowserView.h */,
+				DD5ADF4B22688D32008B5CBB /* HZWaitingView.h */,
+				DD5ADF4C22688D32008B5CBB /* HZPhotoBrowser.bundle */,
+				DD5ADF4D22688D32008B5CBB /* HZPhotoBrowserView.m */,
+				DD5ADF4E22688D32008B5CBB /* HZPhotoBrowser.h */,
 			);
-			path = "zh-Hans.lproj";
+			path = ptotoBrowser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,11 +760,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD7D81A522621B8E00D35D8F /* jindupoint@2x.png in Resources */,
+				00470D9322645597002B040F /* icon-20-ipad.png in Resources */,
 				DD7D81A422621B8E00D35D8F /* fb_wave.png in Resources */,
+				DD5ADF5122688D33008B5CBB /* HZPhotoBrowser.bundle in Resources */,
 				DD26995A22617D0C00944BE5 /* LaunchScreen.storyboard in Resources */,
 				DD26995722617D0C00944BE5 /* Assets.xcassets in Resources */,
 				DD26995522617D0C00944BE5 /* Main.storyboard in Resources */,
-				DD2699DB2261DCAC00944BE5 /* LaunchScreen.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,12 +811,22 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LJXNewsArrive/Pods-LJXNewsArrive-resources.sh",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
@@ -584,33 +843,70 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00470F022272E317002B040F /* UILabel+LJXLabel.m in Sources */,
 				DD2699B52261975C00944BE5 /* LJX_HomePageCell.m in Sources */,
 				DD2699A02261874C00944BE5 /* AnimationContoller.m in Sources */,
+				00470DEF22671F79002B040F /* LJX_RegistViewController.m in Sources */,
 				DD2699BE22619DD800944BE5 /* LJX_MineCell.m in Sources */,
+				00470F2C22755C96002B040F /* LJX_HisModel.m in Sources */,
+				00470F2922755872002B040F /* LJX_HisCell.m in Sources */,
+				00470E0A226D7194002B040F /* LJX_SetupViewController.m in Sources */,
+				00470F2F22755CA9002B040F /* LJX_XZModel.m in Sources */,
 				DD2699C72261BAC000944BE5 /* LJX_MineFooterView.m in Sources */,
 				DD26999D2261872600944BE5 /* UIView+Extension.m in Sources */,
 				DD26998A226183A000944BE5 /* KLTNavigationController.m in Sources */,
+				00470EF72271BFD9002B040F /* LJX_HLCell.m in Sources */,
 				DD2699C12261B18600944BE5 /* LJX_MineModel.m in Sources */,
 				DD7D819F226219CB00D35D8F /* LJX_AboutViewController.m in Sources */,
 				DD269994226185C600944BE5 /* UIBarButtonItem+Extension.m in Sources */,
+				00470DF6226745B8002B040F /* LJX_DZPageViewController.m in Sources */,
+				00470F052272F215002B040F /* LJX_XZCell.m in Sources */,
+				00470D8F226448AA002B040F /* LJX_HomeDetailViewController.m in Sources */,
+				00470EFF2272DA42002B040F /* LJX_SectionHeaderView.m in Sources */,
 				DD2699E12261E78800944BE5 /* LJX_HomeBaseModel.m in Sources */,
 				DD2699AC22618A3600944BE5 /* LJX_MineViewController.m in Sources */,
+				00470EED22719FCE002B040F /* WHUCalendarView.m in Sources */,
 				DD2699B2226194D700944BE5 /* LJX_HomePageViewController.m in Sources */,
+				00470F8322784A47002B040F /* LJXAlertViewController.m in Sources */,
 				DD26995222617D0C00944BE5 /* ViewController.m in Sources */,
+				DD5ADF4F22688D33008B5CBB /* HZWaitingView.m in Sources */,
+				00470F412276C9A0002B040F /* LLWCustomButton.m in Sources */,
 				DD2699A922618A1B00944BE5 /* LJX_HomeViewController.m in Sources */,
+				00470F322275A94D002B040F /* LJX_HistoryListViewController.m in Sources */,
+				DD5ADF5222688D33008B5CBB /* HZPhotoBrowserView.m in Sources */,
+				00470EF022719FCE002B040F /* WHUCalendarCell.m in Sources */,
 				DD26995D22617D0C00944BE5 /* main.m in Sources */,
 				DD7D81A622621B8E00D35D8F /* UIView+GYExtension.m in Sources */,
 				DD2699BB22619C3700944BE5 /* LJX_BaseViewController.m in Sources */,
+				00470E042269A22B002B040F /* LJX_DZModel.m in Sources */,
 				DD7D819C226219A100D35D8F /* WaterView.m in Sources */,
+				00470F26227544A0002B040F /* HYHCircleView.m in Sources */,
+				00470DEC2266F6E8002B040F /* LJX_LoginViewController.m in Sources */,
+				00470F3522768EC9002B040F /* LJX_HLViewController.m in Sources */,
 				DD2699C42261B21600944BE5 /* LJX_MineListModel.m in Sources */,
+				00470F3B2276AFDC002B040F /* LJX_RightHomePageCell.m in Sources */,
 				DD2699A3226188C800944BE5 /* LJX_TabBarController.m in Sources */,
+				00470EF122719FCE002B040F /* WHUCalendarFlowLayout.m in Sources */,
+				00470EDB22719139002B040F /* LJX_HistoryViewController.m in Sources */,
 				DD2699DE2261E47300944BE5 /* LJX_HomeModel.m in Sources */,
 				DD26998D226183BF00944BE5 /* LJX_NavigationViewController.m in Sources */,
 				DD26998622617F4500944BE5 /* AppDelegate+Category.m in Sources */,
+				00470EEF22719FCE002B040F /* WHUCalendarItem.m in Sources */,
+				00470EF222719FCE002B040F /* WHUCalendarPopView.m in Sources */,
+				00470DF922696BBB002B040F /* LJX_DZListCell.m in Sources */,
+				00470F422276C9A0002B040F /* LLWPlusPopView.m in Sources */,
+				00470EFA2272A035002B040F /* LJX_HLModel.m in Sources */,
 				DD2699D72261DAA300944BE5 /* LJXRequestTool.m in Sources */,
+				00470EEE22719FCE002B040F /* WHUCalendarCal.m in Sources */,
+				00470DF3226744B2002B040F /* LJX_DZViewController.m in Sources */,
 				DD26994F22617D0B00944BE5 /* AppDelegate.m in Sources */,
 				DD26999A2261863900944BE5 /* UIButton+Extension.m in Sources */,
 				DD269997226185ED00944BE5 /* UIImage+Extension.m in Sources */,
+				DD5ADF5022688D33008B5CBB /* HZPhotoBrowser.m in Sources */,
+				00470F382276A46D002B040F /* LJX_LeftHomePageCell.m in Sources */,
+				00470EEC22719FCE002B040F /* WHUCalendarYMSelectView.m in Sources */,
+				00470D9822645C70002B040F /* LJX_FeedbackViewController.m in Sources */,
+				00470F462276C9F9002B040F /* LJX_PostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,14 +956,6 @@
 				DD26995922617D0C00944BE5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		DD2699D92261DCAC00944BE5 /* LaunchScreen.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD2699DA2261DCAC00944BE5 /* zh-Hans */,
-			);
-			name = LaunchScreen.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -788,6 +1076,7 @@
 			baseConfigurationReference = 101DE8E9CD18BB4DA9B6C5DC /* Pods-LJXNewsArrive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LJXNewsArrive/Supporting Files/PrefixHeader.pch";
@@ -808,6 +1097,7 @@
 			baseConfigurationReference = 73073733F0D2F48D836757DE /* Pods-LJXNewsArrive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LJXNewsArrive/Supporting Files/PrefixHeader.pch";

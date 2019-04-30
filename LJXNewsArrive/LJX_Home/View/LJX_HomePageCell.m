@@ -44,9 +44,8 @@
     
     self.titleLabel.text = homeListModel.title;
     self.dateLabel.text = homeListModel.date;
-    self.authLabel.text = homeListModel.author_name;
     
-    [self.leftImg sd_setImageWithURL:[NSURL URLWithString:homeListModel.thumbnail_pic_s] placeholderImage:[UIImage imageWithColor:[UIColor redColor]]];
+    [self.leftImg sd_setImageWithURL:[NSURL URLWithString:homeListModel.thumbnail_pic_s] placeholderImage:[UIImage imageWithColor:[UIColor whiteColor]]];
     
     [self.midImg sd_setImageWithURL:[NSURL URLWithString:homeListModel.thumbnail_pic_s02] placeholderImage:[UIImage imageWithColor:[UIColor whiteColor]]];
 
@@ -88,31 +87,33 @@
     [self.titleLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.top.mas_equalTo(NAFit(10));
         make.right.mas_equalTo(-NAFit(10));
-        make.height.mas_greaterThanOrEqualTo(NAFit(40));
+        make.height.mas_greaterThanOrEqualTo(NAFit(60));
+    }];
+    
+    [self.dateLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(weakSelf.titleLabel.mas_left);
+        make.top.mas_equalTo(weakSelf.titleLabel.mas_bottom).offset(NAFit(10));
+        make.right.mas_equalTo(weakSelf.titleLabel.mas_right);
+        make.height.mas_greaterThanOrEqualTo(NAFit(20));
     }];
     
     NSInteger padding = 10;
     [@[self.leftImg, self.midImg, self.rightImg] mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:padding leadSpacing:padding tailSpacing:padding];
     
     [@[self.leftImg, self.midImg, self.rightImg] mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(weakSelf.titleLabel.mas_bottom).offset(NAFit(15));
+        make.top.mas_equalTo(weakSelf.dateLabel.mas_bottom).offset(NAFit(15));
         make.height.mas_equalTo(NAFit(88));
-    }];
-    
-    [self.authLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(weakSelf.titleLabel.mas_left);
-        make.top.mas_equalTo(weakSelf.leftImg.mas_bottom).offset(NAFit(15));
-        make.width.mas_equalTo(weakSelf.contentView.mas_width).multipliedBy(0.5);
-        make.height.mas_equalTo(NAFit(30));
         make.bottom.mas_equalTo(weakSelf.contentView).offset(-NAFit(10));
     }];
     
-    [self.dateLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_equalTo(weakSelf.titleLabel.mas_right);
-        make.top.mas_equalTo(weakSelf.authLabel.mas_top);
-        make.width.mas_equalTo(weakSelf.authLabel.mas_width);
-        make.bottom.mas_equalTo(weakSelf.contentView).offset(-NAFit(10));
-    }];
+//    [self.authLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(weakSelf.titleLabel.mas_left);
+//        make.top.mas_equalTo(weakSelf.leftImg.mas_bottom).offset(NAFit(15));
+//        make.width.mas_equalTo(weakSelf.contentView.mas_width).multipliedBy(0.5);
+//        make.height.mas_equalTo(NAFit(30));
+//        make.bottom.mas_equalTo(weakSelf.contentView).offset(-NAFit(10));
+//    }];
+    
 }
 
 - (UILabel *)titleLabel {
@@ -130,7 +131,7 @@
         _dateLabel = [UILabel new];
         _dateLabel.font = NAFontSize(12);
         _dateLabel.textColor = NAUIColorWithRGB(0x666666, 1.0);
-        _dateLabel.textAlignment = NSTextAlignmentRight;
+//        _dateLabel.textAlignment = NSTextAlignmentRight;
     }
     return _dateLabel;
 }

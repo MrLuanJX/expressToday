@@ -8,11 +8,21 @@
 
 #ifndef DefineFile_h
 #define DefineFile_h
+/* 极速 */
+#define JSAPPKEY @"4f41d6d85dbe73e5"
 
+/* 聚合新闻 */
 #define JHAPPKEY @"578a713cf072919f400c001e0c7bcd9b"
+/* 聚合星座 */
+#define JHXZAPPKEY @"031cab289da743cb85799f005f2636dd"
+
+#define SAFE_AREA_INSETS_TOP safeAreaInsets().top
+#define SAFE_AREA_INSETS_BOTTOM safeAreaInsets().bottom
 
 /** 程序版本号 */
 #define APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+#define iPhoneX ([UIScreen mainScreen].bounds.size.height >= 812)
 
 //字体类型
 #define Font_Medium @"PingFangSC-Medium"
@@ -51,6 +61,33 @@
 /********************数据的判断处理*******************/
 /**判断字符串是否为空*/
 #define NANULLString(string) ((string == nil) ||[string isEqualToString:@""] ||([string length] == 0)  || [string isKindOfClass:[NSNull class]] || [[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] == 0 ||[string isEqual:[NSNull null]])
+
+
+#define HexColorInt32_t(rgbValue) \
+[UIColor colorWithRed:((float)((0x##rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((0x##rgbValue & 0x00FF00) >> 8))/255.0 blue:((float)(0x##rgbValue & 0x0000FF))/255.0  alpha:1]
+
+//判断是否iPhone X
+#define IS_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+// status bar height.
+#define STATUS_BAR_HEIGHT (IS_iPhoneX ? 44.f : 20.f)
+
+// Navigation bar height.
+#define NAVIGATION_BAR_HEIGHT 44.f
+
+// Status bar & navigation bar height.
+#define STATUS_AND_NAVIGATION_HEIGHT (IS_iPhoneX ? 88.f : 64.f)
+
+// Tabbar height.
+#define TAB_BAR_HEIGHT (IS_iPhoneX ? (49.f + 34.f) : 49.f)
+
+// Tabbar safe bottom margin.
+#define TAB_BAR_SAFE_BOTTOM_MARGIN (IS_iPhoneX ? 34.f : 0.f)
+
+//导航栏标题大小
+#define NavTitleFont [UIFont boldSystemFontOfSize:Kfont(17)]
+//导航栏按钮字体大小
+#define NavItemFont [UIFont systemFontOfSize:Kfont(15)]
 
 // 调试打印
 #if DEBUG

@@ -69,6 +69,8 @@ static AFHTTPSessionManager *_sessionManager;
         return task;
     } else {
         
+        NSLog(@"params = %@",params);
+        
          NSURLSessionTask * task = [_sessionManager POST:urlString parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
